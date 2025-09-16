@@ -1,42 +1,50 @@
 header{
-    background-color: darkgray;
-    text-align: center;
-    height: 1.5cm;
-    width: 100%;
+   background-color: darkgrey;
+   text-align: center;
+   width: 100%;
+   padding: 20px 20px;
+   border-radius: 15px;
 }
 a{
-   
-}
-header nav a {
+   text-decoration: none;
+   justify-content: space-evenly;
    color: black;
-   margin: 20px ;
+  margin: 15px;
 }
+
 h1{
-   font-size: xx-large;
-   text-align: center;
+  font-size: xx-large;
+  text-align: center;
 }
 p{
-  font-size: xx-large;
+ font-size: xx-large;
 }
 body{
-   background-image: url(Images/b3.webp);
-   background-size: cover;
-   display: flex;
+background-image: url(Images/b3.webp);
+background-size: cover;
+  
 }
 footer{
-   background-color: rgb(202, 187, 159);
-   font-size: x-large;
-   text-align: center;
-   height: 4cm;
-    
+background-color: rgb(202, 187, 159);
+  font-size: x-large;
+  text-align: center;
+  padding: 5px;
+ border-radius: 15px;   
 }
 nav a:hover{
-   box-shadow: 5px 5px 5px white;
+  box-shadow: 5px 5px 5px white;
 }
 ul{
-   font-size: xx-large;
-   text-align: left;
+  font-size: xx-large;
+  text-align: left;
 }
 h2{
 font-size: x-large;
+}
+.content{
+   background-color:burlywood;
+   border-radius: 15px;
+   padding: 5px 5px 5px 5px;
+   width: 250px;
+   margin: 10px;
 }
