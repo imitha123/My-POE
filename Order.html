@@ -18,40 +18,13 @@
         </nav>
      </header>
      
-     <style>
-
-header{
-    background-color: darkgray;
-    text-align: center;
-    height: 1.5cm;
-    width: 100%;
-}
-header nav a {
-   color: black;
-   margin: 20px ;
-}
-
-h1{
-   font-size: xx-large;
-}
-body{
-   background-image: url(Images/b1.webp);
-   background-size: cover;
-}
-nav a:hover{
-   box-shadow: 5px 5px 5px white;
-}
-form{
-   font-size: x-large;
-}
-     </style>
-     
         <h1>Place an order here</h1>
 
         <!-- this is my style tag-->
         <main>
 
             <!--Form my placing an order-->
+            <div class="container">
             <form method="post" action="thankYou.html">
 
                 <!--Products T0guna has-->
@@ -65,12 +38,13 @@ form{
                 <input type="email" id="email" placeholder="someone@gmail.com" required><br><br>
 
                 <!--For If user has questions reagarding what they are ordering-->
-                <label for="questions">Questions</label>
+                <label for="questions">Questions:</label>
                 <textarea type="textarea" id="textarea" placeholder="e.g any question regarding the order" rows="4"></textarea><br><br>
 
                 <button type="submit">Submit</button>
 
             </form>
+        </div>
         </main>
     
 </body>

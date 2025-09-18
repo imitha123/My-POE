@@ -1,0 +1,193 @@
+
+.home{
+   
+  background-image: url(Images/b3.webp);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+    
+  header{
+    background-color: darkgrey;
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ a{
+    text-decoration: none;
+    display: flexbox;
+    color: white;
+    margin: 15px;
+ }
+ 
+ h1{
+   font-size: xx-large;
+   text-align: center;
+   font-weight: lighter;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ p{
+  font-size: xx-large;
+ }
+ footer{
+ background-color: rgb(202, 187, 159);
+   font-size: x-large;
+   text-align: center;
+   padding: 5px;
+  border-radius: 15px;  
+  width: 100%;
+  margin-top: 60vh;
+  font-weight: bolder;
+  display: flexbox;
+  outline: 4px solid darkolivegreen;
+ }
+ a:hover{
+   box-shadow: 5px 5px 5px white;
+   color: darkgreen;
+ }
+ ul{
+   font-size: xx-large;
+   text-align: left;
+ }
+ h2{
+ font-size: x-large;
+ }
+}
+
+
+.order{
+
+  background-image: url(Images/b1.webp);
+  background-size: cover;
+   
+
+  header{
+    background-color: darkgrey;
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ a{
+  text-decoration: none;
+  display: flexbox;
+  color: white;
+  margin: 15px;
+}
+
+h1{
+   font-size: xx-large;
+   font-weight: lighter;
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+}
+a:hover{
+  box-shadow: 5px 5px 5px white;
+  color: darkgreen;
+}
+form{
+   font-size: xx-large;
+   text-align: center;
+   padding: 15px;
+}
+.container{
+  background-color: beige;
+  width: 350px;
+  height: auto;
+  border-radius: 15px;
+  outline: 4px solid gold;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px black;
+}
+input{
+  height: 30px;
+  width: 250px;
+}
+input:hover{
+  background-color: orange;
+}
+textarea:hover{
+  background-color: orange;
+}
+button{
+  height: 5vh;
+  width: 150px;
+  border-radius: 15px;
+  background-color: bisque;
+  font-size: x-large;
+}
+button:hover{
+  color: darkred;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+label:hover{
+color: darkred;
+}
+
+}
+
+
+.gallery{
+
+  background-image: url(Images/tr\ \(8\).jpg);
+  background-size: contain;
+
+  header{
+    background-color: darkgrey;
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ a{
+  text-decoration: none;
+  display: flexbox;
+  color: white;
+  margin: 15px;
+}
+ marquee img{
+             direction: right;
+             scroll-behavior: smooth;
+             
+         }
+         img{
+          margin: 15px;
+          border-radius: 15px;
+         }
+         p{
+             font-size: x-large;
+         }
+      img:hover{
+        transform: scale(1.1);
+        border: 4px solid orange;
+        padding:10px;
+      }
+         a:hover{
+          box-shadow: 5px 5px 5px white;
+          color: darkgreen;
+        }
+        h1{
+          font-family: 'Times New Roman', Times, serif;
+          text-align: center;
+        }
+        h1:hover{
+          color: darkred;
+          transform: scale(1.2);
+        }
+        
+      
+            
+}
+  
+
+
+
+
+
