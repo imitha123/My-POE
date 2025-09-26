@@ -32,7 +32,7 @@
   margin-right: 500px;
   background-color: rgb(202, 187, 159);
   color: white;
-  border-radius: 25%;
+  border-radius: 15px;
   }
   h1:hover{
     color: black;
@@ -82,6 +82,42 @@
  div ul :hover{
 transform: scale(1.1);
 color: green;
+ }
+ @media (max-width: 480px){
+
+  h1{
+   text-align: center;
+   color: black;
+   font-size: large;
+  }
+
+  div{
+    width: 300px;
+  }
+
+  p{
+    font-size: small;
+  }
+  
+
+ }
+ @media (max-width: 768px){
+
+  h1{
+   text-align: center;
+   color: black;
+   font-size: large;
+  }
+
+  footer{
+    background-color: blanchedalmond;
+  }
+
+  p{
+    font-size: small;
+  }
+  
+
  }
 
  
@@ -173,6 +209,78 @@ button:hover{
 label:hover{
 color: darkred;
 }
+@media (max-width: 480px){
+
+  body{
+    font-size: small;
+  }
+  h1{
+   text-align: center;
+   color: black;
+   font-size: large;
+  }
+
+  button{
+    width: 75px;
+    height: 3vh;
+    font-size: small;
+  }
+
+  
+
+ }
+ @media (max-width: 480px){
+
+  h1{
+   text-align: center;
+   color: black;
+   font-size: large;
+  }
+
+  footer{
+    background-color: blanchedalmond;
+  }
+
+  p{
+    font-size: small;
+  }
+  
+
+ } @media (max-width: 480px){
+
+  h1{
+   text-align: center;
+   color: black;
+   font-size: large;
+  }
+
+  footer{
+    background-color: blanchedalmond;
+  }
+
+  p{
+    font-size: small;
+  }
+  
+
+ } @media (max-width: 768px){
+
+  h1{
+   text-align: center;
+   color: black;
+   font-size: large;
+  }
+
+  footer{
+    background-color: blanchedalmond;
+  }
+
+  p{
+    font-size: small;
+  }
+  
+
+ }
 
 }
 
@@ -246,6 +354,44 @@ color: darkred;
           color: darkred;
           transform: scale(1.2);
         }
+
+        @media (max-width: 480px){
+
+          h1{
+           text-align: center;
+           color: black;
+           font-size: large;
+          }
+        
+          footer{
+            background-color: blanchedalmond;
+          }
+        
+          p{
+            font-size: small;
+          }
+          
+        
+         }
+
+         @media (max-width: 768px){
+
+          h1{
+           text-align: center;
+           color: black;
+           font-size: large;
+          }
+        
+          footer{
+            background-color: blanchedalmond;
+          }
+        
+          p{
+            font-size: small;
+          }
+          
+        
+         }
                  
 }
 
@@ -363,6 +509,43 @@ label:hover{
   .contactContainer p{
     color: blue;
   }
+  @media (max-width: 480px){
+
+    h1{
+     text-align: center;
+     color: black;
+     font-size: large;
+    }
+  
+    footer{
+      background-color: blanchedalmond;
+    }
+  
+    p{
+      font-size: small;
+    }
+    
+  
+   }
+
+   @media (max-width: 768px){
+
+    h1{
+     text-align: center;
+     color: black;
+     font-size: large;
+    }
+  
+    footer{
+      background-color: blanchedalmond;
+    }
+  
+    p{
+      font-size: small;
+    }
+    
+  
+   }
 }
 
 
@@ -469,6 +652,43 @@ h1{
   border: 4px solid orange;
   border-radius: 15px;
 }
+@media (max-width: 480px){
+
+  h1{
+   text-align: center;
+   color: black;
+   font-size: large;
+  }
+
+  footer{
+    background-color: blanchedalmond;
+  }
+
+  p{
+    font-size: small;
+  }
+  
+
+ }
+
+ @media (max-width: 768px){
+
+  h1{
+   text-align: center;
+   color: black;
+   font-size: large;
+  }
+
+  footer{
+    background-color: blanchedalmond;
+  }
+
+  p{
+    font-size: small;
+  }
+  
+
+ }
 
 
 }
