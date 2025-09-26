@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="contact">
     <header>
@@ -15,74 +16,68 @@
             <a href="contact.html" style="font-size: xx-large;">Contact Us</a>
         </nav>
      </header>
-    <!-- this is my style tag-->
-     <style>
-header{ 
-        background-color: darkgray;
-        text-align: center;
-        height: 1.5cm;
-     width: 100%;
-
-     }
-header nav a {
-         color: black;
-         margin: 20px ;
-     }
-form{
-    font-size: xx-large;
-}
-body{
-   
-   background-image: url(Images/b1.webp);
-    background-size: cover;
-}
-p{
-    font-size: x-large;
-}
-nav a:hover{
-    box-shadow: 5px 5px 5px white;
-}
-
-    </style>
-    <!-- this is my mian coontent for this page -->
-    <main>
-    <form method="post" action="thankYou.html">
-
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="e.g Imitha" required><br><br>
-
-        <label for="Email">Email</label>
-        <input type="email" id="email" placeholder="someone@gmail.com" required><br><br>
-
-        <label for="Phone Number">Phone Number</label>
-        <input type="tel" id="Phone Number" placeholder="0767657654" maxlength="10" required><br><br>
-
-        <label for="Message">Message</label>
-        <textarea type="textarea" id="Message" placeholder="Type here" rows="4" required></textarea><br><br>
-
-        <button type="submit">submit</button>
-
-    </form>
-
-    <hr>
-
-
-    <h1>Contact Info</h1>
-
-    <p>
-
-
-    <i>Phone</i><br>
-    Our Administration +27 76 876 2361<br>
-    Customer line +27 87 230 8175<br><br><!--For customers only-->
-
-    <i>Email</i><br>
-    HiIamLara45@gmail.com<br><br>
-
-
-    </p>
-
-</main>
     
+    <!-- this is my mian coontent for this page -->
+
+    <section class="contain">
+        
+        <div class="formContainer">
+
+            <form method="post" action="thankYou.html">
+
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name" placeholder="e.g Imitha" required><br><br>
+        
+                <label for="Email">Email:</label>
+                <br>
+                <input type="email" id="email" placeholder="someone@gmail.com" required><br><br>
+        
+                <label for="Phone Number">Phone Number:</label>
+                <br>
+                <input type="tel" id="Phone Number" placeholder="0767657654" maxlength="10" required><br><br>
+        
+                <label for="Message">Message:</label>
+                <br>
+                <textarea type="textarea" id="Message" placeholder="Type here" rows="4" required></textarea><br><br>
+        
+                <button type="submit">submit</button>
+        
+            </form>
+
+        </div>
+  
+    <div class="contactContainer">
+        <h1>Contact Info</h1>
+        <p>
+    
+        Phone:<br>
+        Our Administration +27 76 876 2361<br>
+        Customer line +27 87 230 8175<br><br>
+    
+        Email:<br>
+        HiIamLara45@gmail.com<br><br>
+    
+        </p>
+    </div>
+
+    </section>
+
+    
+
+<footer>
+    
+    <hr>
+    WhatsApp tel: 074 765 8709<br>
+        Tel: 073 527 4319<br>
+         Physical Address<br>
+        41 Ascot bertrams<br>
+        2094 Johannesburg<br><br>
+        <a href="siteMap.html">SiteMap</a>
+   
+&copy; Toguna 2021
+
+</footer>
+  
 </body>
 </html>

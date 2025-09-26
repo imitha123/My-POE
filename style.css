@@ -1,10 +1,10 @@
 
 .home{
    
-  background-image: url(Images/b3.webp);
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
-    
+    background-image: url(Images/b3.webp);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+  
   header{
     background-color: darkgrey;
     text-align: center;
@@ -12,8 +12,8 @@
     padding: 20px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
+    font-family: Arial, Helvetica, sans-serif; }
+
  a{
     text-decoration: none;
     display: flexbox;
@@ -25,11 +25,21 @@
    font-size: xx-large;
    text-align: center;
    font-weight: lighter;
-   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
+   font-family: Arial, Helvetica, sans-serif; 
+  outline: 4px solid white;
+  padding: 10px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: rgb(202, 187, 159);
+  color: white;
+  border-radius: 25%;
+  }
+  h1:hover{
+    color: black;
+  }
 
  p{
-  font-size: xx-large;
+  font-size: x-large;
  }
  footer{
  background-color: rgb(202, 187, 159);
@@ -38,22 +48,43 @@
    padding: 5px;
   border-radius: 15px;  
   width: 100%;
-  margin-top: 60vh;
+  margin-top: 20vh;
+  margin-right: 10px;
+  margin-left: 10px;
   font-weight: bolder;
   display: flexbox;
-  outline: 4px solid darkolivegreen;
+  outline: 4px solid white;
  }
  a:hover{
    box-shadow: 5px 5px 5px white;
    color: darkgreen;
  }
  ul{
-   font-size: xx-large;
-   text-align: left;
+   font-size: x-large;
+   list-style: none;
  }
  h2{
  font-size: x-large;
  }
+ div{
+  width: 400px;
+  outline: 4px solid black;
+  text-align: center;
+  border-radius: 5px;
+  background-color:snow;
+  box-shadow: 5px 5px 5px black;
+  padding: 5px;
+ }
+ div p:hover{
+  transform: scale(1.1);
+  color: green;
+ }
+ div ul :hover{
+transform: scale(1.1);
+color: green;
+ }
+
+ 
 }
 
 
@@ -70,8 +101,21 @@
     padding: 20px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
+    font-family: Arial, Helvetica, sans-serif; }
+    footer{
+      background-color: rgb(202, 187, 159);
+        font-size: x-large;
+        text-align: center;
+        padding: 5px;
+       border-radius: 15px;  
+       width: 100%;
+       margin-top: 30px;
+       margin-right: 10px;
+       margin-left: 10px;
+       font-weight: bolder;
+       display: flexbox;
+       outline: 4px solid white;
+      }
  a{
   text-decoration: none;
   display: flexbox;
@@ -82,7 +126,7 @@
 h1{
    font-size: xx-large;
    font-weight: lighter;
-   font-family: 'Times New Roman', Times, serif;
+   font-family: Arial, Helvetica, sans-serif;   
    text-align: center;
 }
 a:hover{
@@ -100,8 +144,9 @@ form{
   height: auto;
   border-radius: 15px;
   outline: 4px solid gold;
-  text-align: center;
   box-shadow: 5px 5px 5px 5px black;
+  margin-left: 40%;
+  margin-right: 50%;
 }
 input{
   height: 30px;
@@ -144,8 +189,21 @@ color: darkred;
     padding: 20px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
+    font-family: Arial, Helvetica, sans-serif; }
+    footer{
+      background-color: rgb(202, 187, 159);
+        font-size: x-large;
+        text-align: center;
+        padding: 5px;
+       border-radius: 15px;  
+       width: 100%;
+       margin-top: 15px;
+       margin-right: 10px;
+       margin-left: 10px;
+       font-weight: bolder;
+       display: flexbox;
+       outline: 4px solid white;
+      }
  a{
   text-decoration: none;
   display: flexbox;
@@ -174,16 +232,287 @@ color: darkred;
           color: darkgreen;
         }
         h1{
-          font-family: 'Times New Roman', Times, serif;
+          font-family: Arial, Helvetica, sans-serif;          
           text-align: center;
+          outline: 4px solid white;
+          border-radius: 15px;
+          background-color: grey;
+          margin-left: 500px;
+          margin-right: 500px;
+          color: white;
+          padding:10px;
         }
         h1:hover{
           color: darkred;
           transform: scale(1.2);
         }
-        
-      
-            
+                 
+}
+
+.contact{
+
+  background-image: url(Images/b1.webp);
+  background-size: cover;
+
+  header{
+    background-color: darkgrey;
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    font-family: Arial, Helvetica, sans-serif; }
+    footer{
+      background-color: rgb(202, 187, 159);
+        font-size: x-large;
+        text-align: center;
+        padding: 5px;
+       border-radius: 15px;  
+       width: 100%;
+       margin-top: 30px;
+       margin-right: 10px;
+       margin-left: 10px;
+       font-weight: bolder;
+       display: flexbox;
+       outline: 4px solid white;
+      }
+ a{
+  text-decoration: none;
+  display: flexbox;
+  color: white;
+  margin: 15px;
+}
+
+p{
+font-size: x-large;
+}
+a:hover{
+  box-shadow: 5px 5px 5px white;
+  color: darkgreen;
+}
+input{
+  height: 30px;
+  width: 250px;
+  box-shadow: 5px 5px 5px blue;
+  margin-left: 15px;
+}
+input:hover{
+  background-color: orange;
+}
+textarea{
+  margin-left: 15px;
+  box-shadow: 5px 5px 5px blue;
+}
+textarea:hover{
+  background-color: orange;
+}
+button{
+  height: 5vh;
+  width: 150px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: x-large;
+  margin-left: 15px;
+}
+button:hover{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+  outline: 3px solid white;
+}
+label{
+  font-size: xx-large;
+  margin-left: 15px;
+}
+label:hover{
+  color: darkred;
+  }
+  h1{
+    color: white;
+  }
+  p{
+    color: white;
+  }
+  .contain{
+   display: flex;
+   height: 70vh;
+   margin-top: 15px;
+   width: 100%;
+  }
+  .contain .formContainer{
+    width: 400px;
+    padding: 5px;
+    margin: 10px;
+    outline: 4px solid white;
+    text-align: center;
+    border-radius: 5px;
+    background-color: bisque;
+  }
+  .contain .contactContainer{
+    width: 400px;
+    height: 40vh;
+    padding: 5px;
+    margin: 10px;
+    outline: 4px solid white;
+    text-align: center;
+    border-radius: 5px;
+    background-color:burlywood;
+    margin-right: 10px;
+  }
+  .contactContainer p{
+    color: blue;
+  }
+}
+
+
+.about{
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(Images/b2.jpg);
+
+  header{
+    background-color: darkgrey;
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ footer{
+  background-color: rgb(202, 187, 159);
+    font-size: x-large;
+    text-align: center;
+    padding: 5px;
+   border-radius: 15px;  
+   width: 100%;
+   margin-top: 15px;
+   margin-right: 10px;
+   margin-left: 10px;
+   font-weight: bolder;
+   display: flexbox;
+   outline: 4px solid white;
+  }
+ a{
+  text-decoration: none;
+  display: flexbox;
+  color: white;
+  margin: 15px;
+}
+
+a:hover{
+  box-shadow: 5px 5px 5px white;
+  color: darkgreen;
+}
+h2{
+font-size: x-large;
+}
+.aboutContainer{
+  background-color: yellow;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+}
+.aboutContainer:hover{
+  border: 4px solid orange;
+}
+p{
+  font-size: x-large;
+  padding: 10px ;
+  text-align: center;
+}
+h2{
+  font-size: x-large;
+  padding: 10px;
+  text-align: center;
+}
+h1{
+  font-size: xx-large;
+  padding: 10px;
+  text-align: center;
+  border: 5px solid goldenrod;
+  margin-left: 500px;
+  margin-right: 500px;
+  color: white;
+  background-color: green;
+}
+.headingContainer{
+  background-color: green;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+  outline: 3px solid yellow;
+}
+.headingContainer :hover{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+.MissionContainer{
+  background-color: yellow;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+}
+.MissionContainer :hover{
+  border: 4px solid orange;
+  border-radius: 15px;
+}
+.VissionContainer{
+  background-color: yellow;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black;
+}
+.VissionContainer :hover{
+  border: 4px solid orange;
+  border-radius: 15px;
+}
+
+
+}
+
+.map{
+
+  section{
+height: 50vh;
+display: flex;
+  }
+  .Container1{
+    border: 4px solid black;
+    width: 50%;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20vh;
+    padding-bottom: 25vh;
+    background-color: red;
+  }
+a{
+  text-decoration: none;
+  font-size: xx-large;
+}
+.Container2{
+  border: 4px solid black;
+    width: 50%;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20vh;
+    padding-bottom: 25vh;
+    background-color: red;
+}
+a:hover{
+  color: white;
+  text-decoration:underline;
+}
+
+
+
 }
   
 
