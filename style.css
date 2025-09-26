@@ -731,8 +731,38 @@ a:hover{
   text-decoration:underline;
 }
 
+}
+.thankYou{
 
-
+  background-image: url(Images/tr\ \(6\).jpg);
+     
+  header{
+    background-color: darkgrey;
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+     
+     a{
+      text-decoration: none;
+      display: flexbox;
+      color: white;
+      margin: 15px;
+    }
+    
+    a:hover{
+      box-shadow: 5px 5px 5px white;
+      color: darkgreen;
+    }
+    
+     h1{
+        font-size: xx-large;
+        text-align: center;
+     }
+     
 }
   
 
