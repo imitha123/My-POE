@@ -8,36 +8,29 @@
   header{
     background-color: darkgrey;
     text-align: center;
-    width: 100%;
+    width: 97%;
     padding: 20px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
-    font-family: Arial, Helvetica, sans-serif; }
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
 
  a{
     text-decoration: none;
     display: flexbox;
     color: white;
     margin: 15px;
+    transition: 0.5s ease-in-out;
  }
  
  h1{
    font-size: xx-large;
-   text-align: center;
    font-weight: lighter;
+   text-align: center;
    font-family: Arial, Helvetica, sans-serif; 
-  outline: 4px solid white;
   padding: 10px;
-  margin-left: 500px;
-  margin-right: 500px;
-  background-color: rgb(202, 187, 159);
-  color: white;
-  border-radius: 15px;
+  color: black;
   }
-  h1:hover{
-    color: black;
-  }
-
  p{
   font-size: x-large;
  }
@@ -49,15 +42,13 @@
   border-radius: 15px;  
   width: 100%;
   margin-top: 20vh;
-  margin-right: 10px;
-  margin-left: 10px;
   font-weight: bolder;
   display: flexbox;
-  outline: 4px solid white;
  }
  a:hover{
    box-shadow: 5px 5px 5px white;
    color: darkgreen;
+   border-radius: 5px;
  }
  ul{
    font-size: x-large;
@@ -68,59 +59,27 @@
  }
  div{
   width: 400px;
-  outline: 4px solid black;
   text-align: center;
   border-radius: 5px;
-  background-color:snow;
   box-shadow: 5px 5px 5px black;
   padding: 5px;
+  background: transparent;
+ }
+ div p{
+  transition: 0.5s ease-in-out;
  }
  div p:hover{
   transform: scale(1.1);
   color: green;
  }
- div ul :hover{
+ div ul{
+    transition: 0.5s ease-in-out;
+ }
+ div ul:hover{
 transform: scale(1.1);
 color: green;
  }
- @media (max-width: 480px){
 
-  h1{
-   text-align: center;
-   color: black;
-   font-size: large;
-  }
-
-  div{
-    width: 300px;
-  }
-
-  p{
-    font-size: small;
-  }
-  
-
- }
- @media (max-width: 768px){
-
-  h1{
-   text-align: center;
-   color: black;
-   font-size: large;
-  }
-
-  footer{
-    background-color: blanchedalmond;
-  }
-
-  p{
-    font-size: small;
-  }
-  
-
- }
-
- 
 }
 
 
@@ -133,11 +92,12 @@ color: green;
   header{
     background-color: darkgrey;
     text-align: center;
-    width: 100%;
+   width: 97%;
     padding: 20px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
-    font-family: Arial, Helvetica, sans-serif; }
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
     footer{
       background-color: rgb(202, 187, 159);
         font-size: x-large;
@@ -146,17 +106,15 @@ color: green;
        border-radius: 15px;  
        width: 100%;
        margin-top: 30px;
-       margin-right: 10px;
-       margin-left: 10px;
        font-weight: bolder;
        display: flexbox;
-       outline: 4px solid white;
       }
  a{
   text-decoration: none;
   display: flexbox;
   color: white;
   margin: 15px;
+  transition: 0.5s ease-in-out;
 }
 
 h1{
@@ -168,6 +126,7 @@ h1{
 a:hover{
   box-shadow: 5px 5px 5px white;
   color: darkgreen;
+  border-radius: 5px;
 }
 form{
    font-size: xx-large;
@@ -179,20 +138,19 @@ form{
   width: 350px;
   height: auto;
   border-radius: 15px;
-  outline: 4px solid gold;
   box-shadow: 5px 5px 5px 5px black;
-  margin-left: 40%;
-  margin-right: 50%;
+  display: flex;
+  justify-self: center;
 }
 input{
   height: 30px;
   width: 250px;
 }
 input:hover{
-  background-color: orange;
+  background-color: beige;
 }
 textarea:hover{
-  background-color: orange;
+  background-color: beige;
 }
 button{
   height: 5vh;
@@ -209,78 +167,6 @@ button:hover{
 label:hover{
 color: darkred;
 }
-@media (max-width: 480px){
-
-  body{
-    font-size: small;
-  }
-  h1{
-   text-align: center;
-   color: black;
-   font-size: large;
-  }
-
-  button{
-    width: 75px;
-    height: 3vh;
-    font-size: small;
-  }
-
-  
-
- }
- @media (max-width: 480px){
-
-  h1{
-   text-align: center;
-   color: black;
-   font-size: large;
-  }
-
-  footer{
-    background-color: blanchedalmond;
-  }
-
-  p{
-    font-size: small;
-  }
-  
-
- } @media (max-width: 480px){
-
-  h1{
-   text-align: center;
-   color: black;
-   font-size: large;
-  }
-
-  footer{
-    background-color: blanchedalmond;
-  }
-
-  p{
-    font-size: small;
-  }
-  
-
- } @media (max-width: 768px){
-
-  h1{
-   text-align: center;
-   color: black;
-   font-size: large;
-  }
-
-  footer{
-    background-color: blanchedalmond;
-  }
-
-  p{
-    font-size: small;
-  }
-  
-
- }
 
 }
 
@@ -293,11 +179,12 @@ color: darkred;
   header{
     background-color: darkgrey;
     text-align: center;
-    width: 100%;
+    width: 97%;
     padding: 20px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
-    font-family: Arial, Helvetica, sans-serif; }
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
     footer{
       background-color: rgb(202, 187, 159);
         font-size: x-large;
@@ -306,23 +193,17 @@ color: darkred;
        border-radius: 15px;  
        width: 100%;
        margin-top: 15px;
-       margin-right: 10px;
-       margin-left: 10px;
        font-weight: bolder;
        display: flexbox;
-       outline: 4px solid white;
       }
  a{
   text-decoration: none;
   display: flexbox;
   color: white;
   margin: 15px;
+  transition: 0.5s ease-in-out;
 }
- marquee img{
-             direction: right;
-             scroll-behavior: smooth;
-             
-         }
+
          img{
           margin: 15px;
           border-radius: 15px;
@@ -331,67 +212,24 @@ color: darkred;
              font-size: x-large;
          }
       img:hover{
-        transform: scale(1.1);
-        border: 4px solid orange;
+        transform: scale(1.2);
         padding:10px;
       }
          a:hover{
           box-shadow: 5px 5px 5px white;
           color: darkgreen;
+          border-radius: 5px;
         }
         h1{
           font-family: Arial, Helvetica, sans-serif;          
           text-align: center;
-          outline: 4px solid white;
           border-radius: 15px;
-          background-color: grey;
-          margin-left: 500px;
-          margin-right: 500px;
+          background: transparent;
           color: white;
           padding:10px;
+          transition: 0.5s ease-in-out;
+          font-weight: lighter;
         }
-        h1:hover{
-          color: darkred;
-          transform: scale(1.2);
-        }
-
-        @media (max-width: 480px){
-
-          h1{
-           text-align: center;
-           color: black;
-           font-size: large;
-          }
-        
-          footer{
-            background-color: blanchedalmond;
-          }
-        
-          p{
-            font-size: small;
-          }
-          
-        
-         }
-
-         @media (max-width: 768px){
-
-          h1{
-           text-align: center;
-           color: black;
-           font-size: large;
-          }
-        
-          footer{
-            background-color: blanchedalmond;
-          }
-        
-          p{
-            font-size: small;
-          }
-          
-        
-         }
                  
 }
 
@@ -403,11 +241,12 @@ color: darkred;
   header{
     background-color: darkgrey;
     text-align: center;
-    width: 100%;
+    width: 97%;
     padding: 20px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
-    font-family: Arial, Helvetica, sans-serif; }
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
     footer{
       background-color: rgb(202, 187, 159);
         font-size: x-large;
@@ -416,17 +255,15 @@ color: darkred;
        border-radius: 15px;  
        width: 100%;
        margin-top: 30px;
-       margin-right: 10px;
-       margin-left: 10px;
        font-weight: bolder;
        display: flexbox;
-       outline: 4px solid white;
       }
  a{
   text-decoration: none;
   display: flexbox;
   color: white;
   margin: 15px;
+  transition: 0.5s ease-in-out;
 }
 
 p{
@@ -435,22 +272,22 @@ font-size: x-large;
 a:hover{
   box-shadow: 5px 5px 5px white;
   color: darkgreen;
+  border-radius: 5px;
 }
+
 input{
   height: 30px;
   width: 250px;
-  box-shadow: 5px 5px 5px blue;
   margin-left: 15px;
 }
 input:hover{
-  background-color: orange;
+  background-color: bisque;
 }
 textarea{
   margin-left: 15px;
-  box-shadow: 5px 5px 5px blue;
 }
 textarea:hover{
-  background-color: orange;
+  background-color: bisque;
 }
 button{
   height: 5vh;
@@ -490,65 +327,26 @@ label:hover{
     width: 400px;
     padding: 5px;
     margin: 10px;
-    outline: 4px solid white;
     text-align: center;
     border-radius: 5px;
     background-color: bisque;
+    height: 70vh;
   }
   .contain .contactContainer{
     width: 400px;
     height: 40vh;
     padding: 5px;
     margin: 10px;
-    outline: 4px solid white;
     text-align: center;
     border-radius: 5px;
     background-color:burlywood;
     margin-right: 10px;
   }
   .contactContainer p{
-    color: blue;
+    color: white;
   }
-  @media (max-width: 480px){
 
-    h1{
-     text-align: center;
-     color: black;
-     font-size: large;
-    }
-  
-    footer{
-      background-color: blanchedalmond;
-    }
-  
-    p{
-      font-size: small;
-    }
-    
-  
-   }
-
-   @media (max-width: 768px){
-
-    h1{
-     text-align: center;
-     color: black;
-     font-size: large;
-    }
-  
-    footer{
-      background-color: blanchedalmond;
-    }
-  
-    p{
-      font-size: small;
-    }
-    
-  
-   }
 }
-
-
 .about{
 
   font-family: Arial, Helvetica, sans-serif;
@@ -557,7 +355,7 @@ label:hover{
   header{
     background-color: darkgrey;
     text-align: center;
-    width: 100%;
+    width: 97%;
     padding: 20px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
@@ -571,124 +369,54 @@ label:hover{
    border-radius: 15px;  
    width: 100%;
    margin-top: 15px;
-   margin-right: 10px;
-   margin-left: 10px;
    font-weight: bolder;
    display: flexbox;
-   outline: 4px solid white;
   }
  a{
   text-decoration: none;
   display: flexbox;
   color: white;
   margin: 15px;
+  transition: 0.5s ease-in-out;
 }
 
 a:hover{
   box-shadow: 5px 5px 5px white;
   color: darkgreen;
+  border-radius: 5px;
 }
-h2{
-font-size: x-large;
-}
+
 .aboutContainer{
-  background-color: yellow;
+  background: transparent;
   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 5px black;
-}
-.aboutContainer:hover{
-  border: 4px solid orange;
+  background-color: rgb(238, 231, 231);
 }
 p{
   font-size: x-large;
   padding: 10px ;
   text-align: center;
+  color: black;
 }
 h2{
-  font-size: x-large;
-  padding: 10px;
+  font-size:xx-large;
   text-align: center;
-}
-h1{
-  font-size: xx-large;
-  padding: 10px;
-  text-align: center;
-  border: 5px solid goldenrod;
-  margin-left: 500px;
-  margin-right: 500px;
   color: white;
-  background-color: green;
 }
-.headingContainer{
-  background-color: green;
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px black;
-  outline: 3px solid yellow;
-}
-.headingContainer :hover{
-  background-color: black;
-  color: white;
-  border-radius: 15px;
-}
+
 .MissionContainer{
-  background-color: yellow;
   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 5px black;
-}
-.MissionContainer :hover{
-  border: 4px solid orange;
-  border-radius: 15px;
+  background-color:  rgb(238, 231, 231);
 }
 .VissionContainer{
-  background-color: yellow;
-  width: 100%;
+   width: 100%;
   border-radius: 15px;
   box-shadow: 5px 5px 5px black;
+  background-color:  rgb(238, 231, 231);
 }
-.VissionContainer :hover{
-  border: 4px solid orange;
-  border-radius: 15px;
-}
-@media (max-width: 480px){
-
-  h1{
-   text-align: center;
-   color: black;
-   font-size: large;
-  }
-
-  footer{
-    background-color: blanchedalmond;
-  }
-
-  p{
-    font-size: small;
-  }
-  
-
- }
-
- @media (max-width: 768px){
-
-  h1{
-   text-align: center;
-   color: black;
-   font-size: large;
-  }
-
-  footer{
-    background-color: blanchedalmond;
-  }
-
-  p{
-    font-size: small;
-  }
-  
-
- }
 
 
 }
@@ -736,36 +464,219 @@ a:hover{
 
   background-image: url(Images/tr\ \(6\).jpg);
      
-  header{
+   header{
     background-color: darkgrey;
     text-align: center;
-    width: 100%;
+    width: 97%;
     padding: 20px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
      
-     a{
-      text-decoration: none;
-      display: flexbox;
-      color: white;
-      margin: 15px;
-    }
-    
-    a:hover{
-      box-shadow: 5px 5px 5px white;
-      color: darkgreen;
-    }
+      a{
+  text-decoration: none;
+  display: flexbox;
+  color: white;
+  margin: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+a:hover{
+  box-shadow: 5px 5px 5px white;
+  color: darkgreen;
+  border-radius: 5px;
+}
     
      h1{
         font-size: xx-large;
         text-align: center;
      }
-     
 }
-  
+@media  only screen and (max-width: 600px){
+  .home a{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+    margin: 3px;
+  }
+  .home header{
+    width: 95%;
+    background-color: white;
+    padding: 5px;
+}
+.home{
+  background-image: url(Images/b3.webp);
+  background-size: 350px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+.home h1{
+  font-size: large;
+}
+.home div{
+  height: 40vh;
+  width: 95%;
+  background-color: beige;
+}
+.home p{
 
+  font-size: larger;
+  color: green;
+}
+.home div li{
+  font-size: large;
+  color: green;
+  display: flexbox;
+ 
+}
+.home footer{
+ margin: 5px;
+ width: 95%;
+ background-color: rgb(202, 187, 159);
+ font-weight: lighter;
+ }
+ .gallery{
+  background-size: 350px;
+ }
+  .gallery a{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+    margin: 3px;
+  }
+  .gallery header{
+    width: 97%;
+    background-color: white;
+    padding: 5px;
+}
+.gallery h1{
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 3px;
+  font-size: large;
+  font-weight: lighter;
+}
+.gallery img{
+ height: 30vh;
+ width: 30vh;
+}
+.gallery footer{
+ margin: 5px;
+ outline: none;
+ width: 95%;
+ background-color: rgb(202, 187, 159);
+ font-weight: lighter;
+ }
+ .order{
+  background-size: 350px;
+ }
+  .order header{
+    width: 97%;
+    background-color: white;
+    padding: 5px;
+}
+  .order a{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+    margin: 3px;
+  }
+  .order form{
+   font-size: large;
+   text-align: center;
+   padding: 10px;
+  }
+  .order .container{
+  outline: none;
+  margin-top: 10px;
+  width: 97%;
+  margin-left: 0px;
+  box-shadow: 3px 3px 3px black;
+  }
+  .order form button{
+    padding: 5px;
+    font-size: large;
+    margin-top: 5px;
+    padding-bottom: 25px;
+  }
+  .order footer{
+ margin-top: 15px;
+ outline: none;
+ width: 95%;
+ background-color: rgb(202, 187, 159);
+ font-weight: lighter;
+ }
+   .about header{
+    width: 97%;
+    background-color: white;
+    padding: 5px;
+}
+  .about a{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+    margin: 3px;
+  }
+  .about p{
+    font-size: large;
+  }
+  .about footer{
+     margin-top: 15px;
+ outline: none;
+ width: 95%;
+ background-color: rgb(202, 187, 159);
+ font-weight: lighter;
+  }
+  .contact{
+    background-size: 350px;
+  }
+    .contact header{
+    width: 97%;
+    background-color: white;
+    padding: 5px;
+}
+  .contact a{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+    margin: 3px;
+  }
+  .contact .contain{
+   flex-direction: column;
+  }
+  .contact .contain .formContainer{
+   width: 95%;
+   background: transparent;
+  }
+  .contact .contain .formContainer label{
+    font-size: large;
+  }
+  .contact .contain .formContainer input{
+    height: 25px;
+  }
+  .contact .contain .formContainer button{
+    padding-bottom: 30px;
+  }
+  .contact .contain .contactContainer{
+    width: 95%;
+    height: 45vh;
+    margin-left: 1px;
+  }
+    .contact footer{
+ margin-top: 50vh;
+ outline: none;
+ width: 95%;
+ background-color: rgb(202, 187, 159);
+ font-weight: lighter;
+ }
+
+}
 
 
 
