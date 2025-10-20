@@ -1,7 +1,7 @@
 
 .home{
    
-    background-image: url(Images/b3.webp);
+    background-image: url(/Images/b3.webp);
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
   
@@ -85,7 +85,7 @@ color: green;
 
 .order{
 
-  background-image: url(Images/b1.webp);
+  background-image: url(/Images/b1.webp);
   background-size: cover;
    
 
@@ -173,7 +173,7 @@ color: darkred;
 
 .gallery{
 
-  background-image: url(Images/tr\ \(8\).jpg);
+  background-image: url(/Images/tr\ \(8\).jpg);
   background-size: contain;
 
   header{
@@ -235,7 +235,7 @@ color: darkred;
 
 .contact{
 
-  background-image: url(Images/b1.webp);
+  background-image: url(/Images/b1.webp);
   background-size: cover;
 
   header{
@@ -350,7 +350,7 @@ label:hover{
 .about{
 
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(Images/b2.jpg);
+  background-image: url(/Images/b2.jpg);
 
   header{
     background-color: darkgrey;
@@ -462,7 +462,7 @@ a:hover{
 }
 .thankYou{
 
-  background-image: url(Images/tr\ \(6\).jpg);
+  background-image: url(/Images/tr\ \(6\).jpg);
      
    header{
     background-color: darkgrey;
