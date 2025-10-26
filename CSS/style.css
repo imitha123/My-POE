@@ -207,12 +207,15 @@ color: darkred;
          img{
           margin: 15px;
           border-radius: 15px;
+          width: 250px;
+          height: 250px;
+          transition: 0.5s ease-in-out;
          }
          p{
              font-size: x-large;
          }
       img:hover{
-        transform: scale(1.2);
+        transform: scale(1.1); 
         padding:10px;
       }
          a:hover{
