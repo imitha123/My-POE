@@ -6,3 +6,5 @@ There are two forms you are expected to fill and submit, a form for placing an o
 I used html and css only for this project.
 It has 6 pages that are exciteful to browse through.
 I know am applying javascript on the website
+Changes were made on my About page from colors to interactivity of the page
+Forms also changed.
