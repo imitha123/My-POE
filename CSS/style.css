@@ -510,8 +510,8 @@ a:hover{
     padding: 5px;
 }
 .home{
-  background-image: url(Images/b3.webp);
-  background-size: 350px;
+  background-image: url(/Images/b3.webp);
+  background-size: 400px;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
 }
@@ -541,7 +541,7 @@ a:hover{
  font-weight: lighter;
  }
  .gallery{
-  background-size: 350px;
+  background-size: 400px;
  }
   .gallery a{
     display: flex;
@@ -564,7 +564,7 @@ a:hover{
 }
 .gallery img{
  height: 30vh;
- width: 30vh;
+ width: 40vh;
 }
 .gallery footer{
  margin: 5px;
