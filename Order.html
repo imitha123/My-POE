@@ -5,50 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place an order</title>
     <link rel="stylesheet" href="CSS/style.css">
+   
 </head>
 <body class="order">
 
     <header>
         <nav >
-         <a href="index.html" style="font-size: xx-large;">Home Page</a>
-         <a href="Gallery.html" style="font-size: xx-large;">Gallery</a>
-         <a href="Order.html" style="font-size: xx-large;">Order</a>
-         <a href="About.html" style="font-size: xx-large;">About us</a>
-         <a href="contact.html" style="font-size: xx-large;">Contact Us</a>
+         <a href="index.html" >Home Page</a>
+         <a href="Gallery.html">Gallery</a>
+         <a href="Order.html">Order</a>
+         <a href="About.html">About us</a>
+         <a href="contact.html">Contact Us</a>
         </nav>
      </header>
      
         <h1>Place an order here</h1>
 
-        <!-- this is my style tag-->
-        
-
-            <!--Form my placing an order-->
+    <p id="details"></p>
+            
             <div class="container">
-            <form method="post" action="thankYou.html">
+       
+            <form onsubmit="return validateForm()">
 
                 <!--Products T0guna has-->
                 <label for="Product">Product:</label>
-                <input type="text" id="text" placeholder="e.g stools or dolls" required><br><br>
-
+                <select id="ProductList">
+                   
+                </select>
+                <br><br>
                 <label for="amount"> Amount of products:</label>
-                <input type="number" id="number" placeholder="e.g 1" required><br><br>
+                <select name="selector" id="amountList">
+                    <option value="option1">1</option>
+                    <option value="option2">2</option>
+                    <option value="option3">3</option>
+                    <option value="option4">4</option>
+                    <option value="option5">5</option>
+                    <option value="option6">6</option>
+                    <option value="option7">7</option>
+                    <option value="option8">8</option>
+                </select>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="someone@gmail.com" required><br><br>
+                <input type="text" id="email" placeholder="someone@gmail.com"><br><br>
 
                 <!--For If user has questions reagarding what they are ordering-->
                 <label for="questions">Questions:</label>
                 <textarea type="textarea" id="textarea" placeholder="e.g any question regarding the order" rows="4"></textarea><br><br>
 
                 <button type="submit">Submit</button>
-
+                
             </form>
         </div>
 
+      
+        <script src="js/script.js"></script>
+
         <footer>
     
-            <hr>
+        
             WhatsApp tel: 074 765 8709<br>
                 Tel: 073 527 4319<br>
                  Physical Address<br>
@@ -60,6 +74,6 @@
         
         </footer>
        
-    
+     
 </body>
 </html>

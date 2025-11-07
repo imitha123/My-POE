@@ -6,77 +6,55 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body class="gallery">
+<body class="Gallery">
     <header>
         <nav >
-        <a href="index.html" style="font-size: xx-large;">Home Page</a>
-         <a href="Gallery.html" style="font-size: xx-large;">Gallery</a>
-         <a href="Order.html" style="font-size: xx-large;">Order</a>
-         <a href="About.html" style="font-size: xx-large;">About us</a>
-         <a href="contact.html" style="font-size: xx-large;">Contact Us</a>
+        <a href="index.html" >Home Page</a>
+         <a href="Gallery.html">Gallery</a>
+         <a href="Order.html">Order</a>
+         <a href="About.html">About us</a>
+         <a href="contact.html">Contact Us</a>
         </nav>
      </header>
      
      <!-- this is my mian coontent for this page -->
-       <h1>Our Stools</h1>
-      
-       <div >
 
-        <img src="Images/art6.jpg" alt="Stools images" width="300" height="300">
-        <img src="Images/art2.jpg" alt="Stools images" width="300" height="300">
-        <img src="Images/art.jpg" alt="Stools images" width="300" height="300">
-        <img src="Images/art3.jpg" alt="Stools images" width="300" height="300">
-        <img src="Images/art4.webp" alt="Stools images" width="300" height="300">
-        <img src="Images/art5.jpg" alt="Stools images" width="300" height="300">
-       </div>
-    
-       <hr>
-       <h1>Our baskets</h1>
-       <div >
-   
-        <img src="Images/b1.webp" alt="Baskets Images" width="300" height="300">
-        <img src="Images/b2.jpg"  alt="Baskets Images"  width="300" height="300">
-        <img src="Images/b3.webp"  alt="Baskets Images"  width="300" height="300">
-        <img src="Images/b4.webp"  alt="Baskets Images"  width="300" height="300">
-        <img src="Images/Tg.webp"  alt="Baskets Images"  width="300" height="300">
-        <img src="Images/t (4).jpg"  alt="Baskets Images"  width="300" height="300">
-        <img src="Images/tr (3).jpg"  alt="Baskets Images"  width="300" height="300">
+      <h1>Toguna Products</h1>
+       <!--Gallery class-->
+       <div id="gallery" >
+
+
+        <!-- <img  src="Images/art6.jpg" alt="Stools images" >
+        <img src="Images/art2.jpg" alt="Stools images" >
+        <img src="Images/art.jpg" alt="Stools images">
+        <img src="Images/art3.jpg" alt="Stools images">
+        <img src="Images/art4.webp" alt="Stools images">
+        <img src="Images/art5.jpg" alt="Stools images">
+       -->
+       
+       </div> 
+
+        <!-- Lightbox container -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+    <div id="info">
+        <p id="price"></p>
+        <p id="Product"></p>
+        <p id="Name"></p>
+        <button id="submit" >Order</button>
+       
+    </div>
+  </div>
   
-       </div>
-       <hr>
+    <script src="js/script.js">
 
-       <h1>Our dolls</h1>
+     </script>
 
-       <div >
-
-
-        <img src="Images/tr (1).jpg" alt="Dolls Images" width="300" height="300">
-        <img src="Images/tr (5).jpg" alt="Dolls Images" width="300" height="300">
-        <img src="Images/tr (7).jpg" alt="Dolls Images" width="300" height="300">
-        <img src="Images/be (4).jpg" alt="Dolls Images" width="300" height="300">
-    
-
-       </div>
-       <hr>
-<h1>Our beads</h1>
-       <div >
- 
-
-        <img src="Images/be (1).jpg" alt="Beads Images" width="300" height="300">
-        <img src="Images/be (2).jpg" alt="Beads Images" width="300" height="300">
-        <img src="Images/be (3).jpg"alt="Beads Images"  width="300" height="300">
-        <img src="Images/be (5).jpg" alt="Beads Images" width="300" height="300">
-        <img src="Images/nb (2).jpg"alt="Beads Images" width="300" height="300">
-        <img src="Images/nb (3).jpg"alt="Beads Images" width="300" height="300">
-        
-
-       </div>
-
-    <hr>
 
     <footer>
     
-        <hr>
+        
         WhatsApp tel: 074 765 8709<br>
             Tel: 073 527 4319<br>
              Physical Address<br>
@@ -87,5 +65,7 @@
     &copy; Toguna 2021
     
     </footer>
+
+     
 </body>
 </html>
