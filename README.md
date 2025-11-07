@@ -8,3 +8,9 @@ It has 6 pages that are exciteful to browse through.
 I know am applying javascript on the website
 Changes were made on my About page from colors to interactivity of the page
 Forms also changed.
+JavaScript applied 
+content is now loaded dynamically
+lightbox has been made using javascript and css 
+References 
+W3 Schools, 2025. JavaScript Tutorial. [online] Available at:
+<https://www.w3schools.com/js/default.asp> [Accessed 07 October 2025].
