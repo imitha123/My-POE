@@ -21,28 +21,59 @@
      
         <h1>Place an order here</h1>
 
-    <p id="details"></p>
             
             <div class="container">
        
-            <form onsubmit="return validateForm()">
+            <form onsubmit=" return validateForm()" >
 
                 <!--Products T0guna has-->
                 <label for="Product">Product:</label>
-                <select id="ProductList">
-                   
+                <select name="Product" id="productsSelector">
+                    <option value=""></option>
+                    <option value="Sools">Stools</option>
+                    <option value="Basket">Baskets</option>
+                    <option value="Dolls">Dolls</option>
+                    <option value="Beads">Beads</option>
+                    
                 </select>
+                <label for="ProductId">Product ID</label>
+                 <select name="ID" id="productid" >
+                    <option value=""></option>
+                    <option value="st2">st2</option>
+                    <option value="st">st</option>
+                    <option value="st3">st3</option>
+                    <option value="st4">st4</option>
+                    <option value="st5">st5</option>
+                    <option value="B2">B2</option>
+                    <option value="B3">B3</option>
+                    <option value="B4">B4</option>
+                    <option value="B">B</option>
+                    <option value="B5">B5</option>
+                    <option value="B6">B6</option>
+                    <option value="D1">D1</option>
+                    <option value="D2">D2</option>
+                    <option value="D3">D3</option>
+                    <option value="D4">D4</option>
+                    <option value="Be1">Be1</option>
+                    <option value="Be2">Be2</option>
+                    <option value="Be3">Be3</option>
+                    <option value="Be5">Be5</option>
+                    <option value="Be4">Be4</option>
+                    <option value="Be6">Be6</option>
+                    
+                </select> 
                 <br><br>
                 <label for="amount"> Amount of products:</label>
-                <select name="selector" id="amountList">
-                    <option value="option1">1</option>
-                    <option value="option2">2</option>
-                    <option value="option3">3</option>
-                    <option value="option4">4</option>
-                    <option value="option5">5</option>
-                    <option value="option6">6</option>
-                    <option value="option7">7</option>
-                    <option value="option8">8</option>
+                <select name="Amount" id="amountList">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="6">7</option>
+                    <option value="7">8</option>
                 </select>
 
                 <label for="email">Email:</label>
@@ -50,15 +81,23 @@
 
                 <!--For If user has questions reagarding what they are ordering-->
                 <label for="questions">Questions:</label>
-                <textarea type="textarea" id="textarea" placeholder="e.g any question regarding the order" rows="4"></textarea><br><br>
+                <textarea type="textarea" id="textarea" placeholder="e.g (Optional)" rows="4"></textarea><br><br>
 
-                <button type="submit">Submit</button>
+                <button type="submit" id="formSubmit">Submit 📩</button>
                 
             </form>
+
+           <div id="results">
+             
+           </div> 
         </div>
 
+        
+
       
-        <script src="js/script.js"></script>
+        <script src="js/script.js">
+           
+        </script>
 
         <footer>
     

@@ -1,21 +1,66 @@
  function validateForm(){
-            const email = document.getElementById("email").value.trim();
+            const Email = document.getElementById("email").value;
+            const Product = document.getElementById("productsSelector").value;
+            const ProductID = document.getElementById("productid").value;
+            const Amount = document.getElementById("amountList").value;
 
             // if there is no email an alert message will pop out
-            if(email === ""){
-                alert("No email entered, enter your email");
+            if(Email === "" || product === "" || ProductID === "" || Amount === ""){
+                alert("Form Not Completed");
                 return false;
             }
-           else if (!email.includes("@")) {
-                alert("Your is Email In Wrong Format");
+            if (!Email.includes("@")) {
+                alert("Your Email is in the Wrong Format");
                 return false;
             } 
-             else{
-                alert("Form Submitted!😁");
-                            return true;
-            }
+         
+             displayFormDetails({ Email, Product, ProductID, Amount });
+             
+                alert("Form Submitted!✅");
+               
+                            return false;
+            
+
                 
         }
+        function displayFormDetails(details) {
+    const container = document.getElementById("results");
+   
+    // Clear previous results
+    container.innerHTML = "";
+
+    // Create a p tag and ul and a button
+    const ul = document.createElement("ul");
+
+    const li2 = document.createElement("li");
+    const li3 = document.createElement("li");
+
+    li3.textContent = `(Click on the container to close)❌`;
+    li3.style.color = "black";
+    li3.style.fontSize = "large";
+    li2.style.color = "black";
+    li2.textContent = `Details Of Order:`;
+    ul.style.listStyle = "none";
+       
+    ul.appendChild(li3);
+     ul.appendChild(li2);
+     
+    for (let key in details) {
+        const li = document.createElement("li");
+        ul.style.listStyle = "none";
+        container.style.display = "flex";
+        li.textContent = `${key}: ${details[key]}`;
+        ul.appendChild(li);
+    }
+    
+    container.addEventListener("click", () => {
+      container.style.display = "none";
+    })
+
+    container.appendChild(ul);
+}
+
+        
 // instances
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
@@ -24,6 +69,8 @@ const price = document.getElementById('price');
 const product = document.getElementById('Product');
 const button = document.getElementById("submit");
 const PName = document.getElementById("Name");
+const Search = document.getElementById("Input");
+
 
 
 // 1. Get the gallery container
@@ -32,74 +79,97 @@ const gallery = document.getElementById("gallery");
 // 2. List of image paths
 const imagePaths = [
    
-     {src: "Images/art2.jpg",title:"Stools", alt:"Image of a chair",id:"art2"},
-     {src: "Images/art.jpg" ,title:"Stools" , alt:"Image of a chair",id:"art"},
-     {src: "Images/art3.jpg",title:"Stools",  alt:"Image of a chair",id:"art3"},
-     {src: "Images/art4.webp",title:"Stools",  alt:"Image of a chair",id:"art4"},
-     {src: "Images/art5.jpg",title:"Stools",  alt:"Image of a chair",id:"art5"},
-     {src: "Images/b2.jpg",title:"Baskets" , alt:"Image of a Basket",id:"B2"},
-     {src: "Images/b3.webp",title:"Baskets"  , alt:"Image of a Basket",id:"B3"},
-     {src: "Images/b4.webp",title:"Baskets"  , alt:"Image of a Basket",id:"B4"},
-     {src: "Images/Tg.webp",title:"Baskets"  , alt:"Image of a Basket",id:"Tg"},
-     {src: "Images/t (4).jpg",title:"Baskets" , alt:"Image of a Basket" ,id:"T4" },
-     {src: "Images/tr (3).jpg",title:"Baskets"  , alt:"Image of a Basket",id:"Tr3"},
-     {src: "Images/tr (1).jpg",title:"Dolls"  , alt:"Image of a Doll", id:"Tr1"},
-     {src: "Images/tr (5).jpg" ,title:"Dolls"  , alt:"Image of a Doll", id:"Tr5"},
-     {src: "Images/tr (7).jpg",title:"Dolls" , alt:"Image of a Doll",id:"Tr7" },
-     {src: "Images/be (4).jpg",title:"Dolls"  , alt:"Image of a Doll",id:"Be4"},
-     {src: "Images/be (1).jpg",title:"Beads" , alt:"Image of a Beads",id:"Be1"},
-     {src: "Images/be (2).jpg",title:"Beads" , alt:"Image of a Beads",id:"Be2"},
-     {src: "Images/be (3).jpg",title:"Beads" , alt:"Image of a Beads",id:"Be3"},
-     {src: "Images/be (5).jpg",title:"Beads" , alt:"Image of a Beads",id:"Be5"},
-     {src: "Images/nb (2).jpg",title:"Beads", alt:"Image of a Beads",id:"Nb2"},
-     {src: "Images/nb (3).jpg",title:"Beads", alt:"Image of a Beads",id:"Nb3"},
+     {src: "Images/art2.jpg",title:"Stools", alt:"Image of a chair",id:"st2",price: "1200"},
+     {src: "Images/art.jpg" ,title:"Stools" , alt:"Image of a chair",id:"st",price: "1100"},
+     {src: "Images/art3.jpg",title:"Stools",  alt:"Image of a chair",id:"st3",price: "700"},
+     {src: "Images/art4.webp",title:"Stools",  alt:"Image of a chair",id:"st4",price: "900"},
+     {src: "Images/art5.jpg",title:"Stools",  alt:"Image of a chair",id:"st5",price: "800"},
+     {src: "Images/b2.jpg",title:"Baskets" , alt:"Image of a Basket",id:"B2",price: "750"},
+     {src: "Images/b3.webp",title:"Baskets"  , alt:"Image of a Basket",id:"B3",price: "600"},
+     {src: "Images/b4.webp",title:"Baskets"  , alt:"Image of a Basket",id:"B4",price: "1500"},
+     {src: "Images/Tg.webp",title:"Baskets"  , alt:"Image of a Basket",id:"B",price: "400"},
+     {src: "Images/t (4).jpg",title:"Baskets" , alt:"Image of a Basket" ,id:"B5",price: "550" },
+     {src: "Images/tr (3).jpg",title:"Baskets"  , alt:"Image of a Basket",id:"B6",price: "650"},
+     {src: "Images/tr (1).jpg",title:"Dolls"  , alt:"Image of a Doll", id:"D1",price: "450"},
+     {src: "Images/tr (5).jpg" ,title:"Dolls"  , alt:"Image of a Doll", id:"D2",price: "850"},
+     {src: "Images/tr (7).jpg",title:"Dolls" , alt:"Image of a Doll",id:"D3",price: "1550" },
+     {src: "Images/be (4).jpg",title:"Dolls"  , alt:"Image of a Doll",id:"D4",price: "1250"},
+     {src: "Images/be (1).jpg",title:"Beads" , alt:"Image of a Beads",id:"Be1",price: "420"},
+     {src: "Images/be (2).jpg",title:"Beads" , alt:"Image of a Beads",id:"Be2",price: "390"},
+     {src: "Images/be (3).jpg",title:"Beads" , alt:"Image of a Beads",id:"Be3",price: "480"},
+     {src: "Images/be (5).jpg",title:"Beads" , alt:"Image of a Beads",id:"Be5",price: "350"},
+     {src: "Images/nb (2).jpg",title:"Beads", alt:"Image of a Beads",id:"Be4",price: "950"},
+     {src: "Images/nb (3).jpg",title:"Beads", alt:"Image of a Beads",id:"Be6",price: "730"},
      
 ];
-// parallel arrays
-const prices =[
-   
-    "R1200", "R1350","R650", "R340", "R670","R550", "R1600","R1500","R600", "R340","R300", "R500","R400", "R630","R500","R450","R300", "R300",
-    "R200",
-    "R300",
-    "R400",
-];
- const getIndex = 0;
-index = 0;
-imagePaths.forEach((src,index )=> {
-  const img = document.createElement("img");
-  img.src = src.src;                       // set the path
-  img.title = src.title;                  // set its image title
-  img.alt = src.alt;   
-  
- 
-  img.addEventListener("click", () => {
-   
-    lightbox.style.display = "flex";
-    lightboxImg.src = img.src;
-    price.textContent = `Price: ${prices[index]}`;
-    product.textContent =`Product Name: ${imagePaths[index].title}`;
-    PName.textContent = `Product ID: ${imagePaths[index].id}`;
 
+
+const galleryContainer = document.getElementById("gallery");
+
+ Index = 0;
+ function renderImages(images){
+  galleryContainer.innerHTML = "";
+
+  images.forEach( (image,Index) => {
+const ImgDiv = document.createElement("div");
+    
+    ImgDiv.innerHTML = `<img src = "${image.src}" >`;
+    ImgDiv.style.boxShadow = " 2px 2px 2px black";
+    ImgDiv.style.borderRadius = "5px";
+
+
+    ImgDiv.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src= imagePaths[Index].src;
+    price.textContent = `Price: ${imagePaths[Index].price}`;
+    product.textContent =`Product Name: ${imagePaths[Index].title}`;
+    PName.textContent = `Product ID: ${imagePaths[Index].id}`;
+    
+    closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
+  button.addEventListener("click", ()=> {
+    window.location.href = "Order.html";
+  })
+
+  lightbox.addEventListener("click", (e) =>{
+    if( e.target === lightbox){
+      lightbox.style.display = "none";
+    }
+  })
+  })
+    galleryContainer.appendChild(ImgDiv);
     
   });
 
-   button.addEventListener("click", () => {
-   window.location.href = "Order.html";
-});
+  
+ }
 
-  // set the images on the gallery container
-  gallery.appendChild(img); 
+ renderImages(imagePaths);
 
-});
-// close the lightBox
-closeBtn.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
+Search.addEventListener("input", () => {
 
-lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = "none";
+  const searchTerm = Search.value.toLowerCase().trim();
+
+   if (searchTerm === "") {
+    // If search box is empty, show all images again
+   renderImages(imagePaths);
+
+    return;
+  }else{
+       const filteredImages = imagePaths.filter(image =>
+    image.title.toLowerCase().includes(searchTerm)    
+  );
+
+  // Render filtered images temporarily
+
+   renderImages(filteredImages);
+
+ 
   }
-});
+
+})
+
 
 

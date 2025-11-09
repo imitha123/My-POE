@@ -14,3 +14,5 @@ lightbox has been made using javascript and css
 References 
 W3 Schools, 2025. JavaScript Tutorial. [online] Available at:
 <https://www.w3schools.com/js/default.asp> [Accessed 07 October 2025].
+search functionality added using javascript
+order process enhanced using javaScript
