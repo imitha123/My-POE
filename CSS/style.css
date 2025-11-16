@@ -374,7 +374,7 @@ color: darkred;
 
 .contact{
 
-  background-image: url(/Images/b1.webp);
+  background-color: beige;
   background-size: cover;
 
   header{
@@ -432,12 +432,11 @@ textarea:hover{
   background-color: bisque;
 }
 button{
-  height: 5vh;
-  width: 150px;
+  padding: 10px;
   border-radius: 15px;
   background-color: white;
   font-size: x-large;
-  margin-left: 15px;
+  transition: 0.5s ease-in-out;
 }
 button:hover{
   color: white;
@@ -473,6 +472,7 @@ label:hover{
     border-radius: 5px;
     background-color: bisque;
     height: 70vh;
+    box-shadow: 0px 0px 10px;
   }
   .contain .contactContainer{
     width: 400px;
@@ -483,6 +483,7 @@ label:hover{
     border-radius: 5px;
     background-color:burlywood;
     margin-right: 10px;
+      box-shadow: 0px 0px 10px;
   }
   .contactContainer p{
     color: white;

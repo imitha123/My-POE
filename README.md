@@ -9,10 +9,11 @@ I know am applying javascript on the website
 Changes were made on my About page from colors to interactivity of the page
 Forms also changed.
 JavaScript applied 
-content is now loaded dynamically
-lightbox has been made using javascript and css 
+Content is now loaded dynamically
+Lightbox has been made using javascript and css 
+Search functionality added using javascript
+Order process enhanced using javaScript
+Added a map showing the location of the company
 References 
 W3 Schools, 2025. JavaScript Tutorial. [online] Available at:
 <https://www.w3schools.com/js/default.asp> [Accessed 07 October 2025].
-search functionality added using javascript
-order process enhanced using javaScript

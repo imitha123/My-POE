@@ -24,7 +24,7 @@
         
         <div class="formContainer">
 
-            <form method="post" action="thankYou.html">
+            <form id="contact-form">
 
                 <label for="name">Name:</label>
                 <br>
@@ -34,19 +34,54 @@
                 <br>
                 <input type="email" id="email" placeholder="someone@gmail.com"><br><br>
         
-                <label for="Phone Number">Phone Number:</label>
+                <label for="phone">Phone Number:</label>
                 <br>
-                <input type="tel" id="Phone Number" placeholder="0767657654" maxlength="10"><br><br>
+                <input type="tel" id="phone" placeholder="0767657654" maxlength="10"><br><br>
         <!-- questions-->
-                <label for="Message">Message:</label>
+                <label for="message">Message:</label>
                 <br>
-                <textarea type="textarea" id="Message" placeholder="Type here" rows="4"></textarea><br><br>
+                <textarea id="message" placeholder="Type here" rows="4"></textarea><br><br>
         
                 <button type="submit">submit</button>
         
             </form>
 
         </div>
+
+        <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("service_movyohh"); // replace with your EmailJS public key
+  })();
+
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent default form submission
+
+    // Compile form data
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      message: form.message.value
+    };
+
+    // Send email
+    emailjs.send("service_movyohh","template_rwiyika", formData)
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        alert("Thank you! Your message has been sent.");
+        form.reset(); // clear form
+        // optional: redirect to thank you page
+         window.location.href = "thankYou.html";
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        alert("Oops! Something went wrong. Please try again.");
+      });
+  });
+</script>
   
     <div class="contactContainer">
         <h1>Contact Info</h1>
